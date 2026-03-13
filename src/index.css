@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased transition-colors duration-500;
+  }
+}
+
+.dark {
+  background-color: #0c061a;
+  color: #e9d5ff;
+}
+
+.light {
+  background-color: #fdfcff;
+  color: #2e1065;
+}
+
+/* Custom Purple Gradients */
+.bg-purple-fade-light {
+  background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+}
+
+.bg-purple-fade-dark {
+  background: radial-gradient(circle at top right, #1e1048 0%, #0c061a 100%);
+}
